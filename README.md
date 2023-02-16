@@ -1,4 +1,14 @@
 # rate-limiter
+A rate limiter is a software component or module that controls the number of requests a client can make to a server within a given time period. The rate limiter helps to prevent abuse, protect server resources, and ensure that all clients have equal access to those resources.
+
+A rate limiter typically defines a limit on the number of requests that can be made by a client in a given time period, such as one request per second, or 100 requests per minute. When a client exceeds this limit, the rate limiter may delay or reject the request, or return an error code to the client.
+
+Rate limiters can be implemented in different ways, such as using a middleware in a web server, a library in an application, or a proxy in front of a server. They are commonly used in web APIs, web servers, and distributed systems to prevent excessive usage, protect against denial of service attacks, and maintain stability and availability.
+
+Some rate limiters may use a sliding window approach to adjust the limit based on the recent history of requests, while others may use a token bucket or leaky bucket algorithm to smooth out the request rate over time.
+
+Overall, rate limiters are an important tool for controlling the flow of requests to a server or a service, and for ensuring fair and reliable access to resources.
+
 Implementing rate limiting in `Node.js` involves controlling the number of requests that a client can make to a server within a given time period. This can help to prevent abuse, reduce server load, and ensure that all clients have equal access to server resources.
 
 There are several ways to implement `rate limiting` in Node.js, including using third-party libraries or writing custom code. Here's an example of how to implement rate limiting using the `express-rate-limit` middleware library:
